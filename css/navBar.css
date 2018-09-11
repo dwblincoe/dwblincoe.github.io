@@ -80,5 +80,6 @@
         width:30px;
         margin-left:30vw;
         margin-top:6px;
+        justify-content: center;
     }
 }
