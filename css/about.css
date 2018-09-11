@@ -1,16 +1,39 @@
-.aboutMe{
-    display:block;
-    margin-top:90px;
+.aboutMeContainer{
+    display:flex;
+    margin-top:10%;
+}
+
+.aboutMe h1{
+    font-size: 80px;
+    text-align:center;
 }
 
 img{
     width:100%;
 }
 
-.interestsBox{
+.interests{
     display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
 }
-.interests img{
+
+.interestsBox{
+    display:inline-block;
+    justify-content: center;
+    padding:10px;
+    text-align:center;
     width:20%;
-    height:20%;
+    margin-top: 50px;
+}
+
+@media(max-width:1030px){
+    .aboutMe h1{
+        font-size:50px;
+    }
+
+    .aboutMe p{
+        font-size:12px;
+    }
 }

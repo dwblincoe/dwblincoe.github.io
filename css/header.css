@@ -1,5 +1,5 @@
 .jumboTron{
-    background-image:url("../assets/images/flagHeader.jpeg");
+    background-image:url("../assets/images/deskSpace.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     height:1020px;
@@ -38,9 +38,9 @@
     }
 }
 
-/* @media(max-width:1300px){
+@media(max-width:1300px){
     .header{
-        margin:200px auto;
+        margin:300px auto;
     }
     
     .jumboTron h1{
@@ -49,11 +49,11 @@
     .jumboTron h3{
         font-size:40px;
     }
-} */
+}
 
 @media(max-width: 1030px){
     .header{
-        margin: 180px auto;
+        margin: 200px auto;
     }
     
     .jumboTron{
@@ -81,7 +81,7 @@
     }
 
     .jumboTron h3{
-        font-size:22px;
+        font-size:25px;
         padding:0;
     }
     
@@ -90,9 +90,8 @@
     }
 }
 
-/* @media(max-width:400px){
+@media(max-width:450px){
     .header{
-        margin-top:1px;
-        width:60%;
+        margin-top:200px;
     }
-} */
+}
