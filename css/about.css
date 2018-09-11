@@ -1,0 +1,16 @@
+.aboutMe{
+    display:block;
+    margin-top:90px;
+}
+
+img{
+    width:100%;
+}
+
+.interests{
+    display:flex;
+}
+.interests img{
+    width:20%;
+    height:20%;
+}

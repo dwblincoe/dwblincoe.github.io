@@ -1,0 +1,98 @@
+.jumboTron{
+    background-image:url("../assets/images/flagHeader.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:1020px;
+}
+
+.jumboTron h1, h3{
+    font-family: "Play", sans-serif;
+    color:var(--white);
+    padding:20px;
+}
+
+.jumboTron h1{
+    font-size:120px;
+    border-bottom: 2px solid var(--white);
+}
+
+.jumboTron h3{
+    font-size:60px;
+}
+
+.header{
+    display:flex;
+    flex-wrap: wrap;
+    margin:300px auto 0 auto;
+    justify-content: center;
+    width:65%;
+}
+
+@media(max-width:1600px){
+    .jumboTron h1{
+        font-size: 100px;
+    }
+
+    .jumboTron h3{
+        font-size:50px;
+    }
+}
+
+/* @media(max-width:1300px){
+    .header{
+        margin:200px auto;
+    }
+    
+    .jumboTron h1{
+        font-size:80px;
+    }
+    .jumboTron h3{
+        font-size:40px;
+    }
+} */
+
+@media(max-width: 1030px){
+    .header{
+        margin: 180px auto;
+    }
+    
+    .jumboTron{
+        height:600px;
+    }
+
+    .jumboTron h1{
+        font-size:65px;
+        padding:10px;
+    }
+
+    .jumboTron h3{
+        font-size: 30px;
+        padding:10px;
+    }
+}
+
+@media(max-width:620px){
+    .jumboTron{
+        height:400px;
+    }
+    .jumboTron h1{
+        font-size:35px;
+        padding:0;
+    }
+
+    .jumboTron h3{
+        font-size:22px;
+        padding:0;
+    }
+    
+    .header{
+        margin-top:125px;
+    }
+}
+
+/* @media(max-width:400px){
+    .header{
+        margin-top:1px;
+        width:60%;
+    }
+} */
