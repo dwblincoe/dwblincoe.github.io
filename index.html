@@ -48,7 +48,6 @@
     </div>
     <br>
     <br>
-    <hr>
 <!-- 
     ----------------------------------
                 ABOUT ME
@@ -56,11 +55,11 @@
 -->
     <div class="container">
         <h1>About</h1>
-        <div class="row justify-content-around aboutMeContainer">
-            <div class='col-xl-4 col-lg-4 col-md-5 justify-content-center'>   
-                <img src="assets/images/aang.jpg">
+        <div class="row justify-content-center aboutMeContainer">
+            <div class='col-xl-5 col-lg-6 col-md-5'>   
+                <img src="assets/images/meAndMorgan.png">
             </div>
-            <div class="col-xl-5 col-lg-6 col-md-6">
+            <div class="col-xl-6 col-lg-6 col-md-6">
                 <p>From Marine Musician to software developer, I provide attention to detail and discipline
                     for a focused mind. I decided to get into software development because I had previously
                     began learning python and found that I really enjoyed coding. I then seeked out ways
@@ -73,10 +72,12 @@
                     visually appealing. Not only am I looking to do this but also implement my strengths of
                     problem-solving, team work, attention to detail, and creativity. 
                 </p>
+                <p>Want to learn more?</p>
+                <a href='assets/Resume.pdf'>Download my Resume</a>
             </div>
         </div>
         <div class='interests'>
-            <h2>Other Interests:</h2>
+            <h2>Other Interests</h2>
                 <div class="row">
                     <div class="interestsBox col-lg-3 col-sm-3 col-xs-8">
                         <h3>Fitness</h3>
@@ -97,16 +98,85 @@
                 </div>
         </div>
     </div>
-    <br>
-    <br>
+    
     <hr>
+
+    <!--
+        -----------------------
+              Skillsets
+        -----------------------
+    -->
+    
+    <div class='container skillsets'>
+        <div class='row justify-content-center'>
+            <h1>Skillsets</h1>
+        </div>
+        <div class='row justify-content-center'>
+            <i class="fab fa-html5"></i>
+        
+            <i class="fab fa-css3"></i>
+        
+            <i class="fab fa-js-square"></i>
+        </div>
+
+    </div>
+    
+    <hr>
+    
     <!--
         -----------------------
                Projects
         -----------------------
     -->
+    <div class='container'>
+        <h1 class='projectHead'>Projects</h1>
+        <div class="row justify-content-center projectsImg">
+            <a href='https://codepen.io/dwblincoe/pen/VGaJGE' class='col'>
+                <img src='assets/images/cartman.png' class='img-fluid'>
+            </a>
+        </div>
+            
+        
+        
+        <div class='row justify-content-center projectsImg'>
+            <a href='https://dwblincoe.github.io/firstWebsite/' class='col'>
+                <img src='assets/images/website.png'>
+            </a>
+        </div>    
 
-    <h1>Projects</h1>
+        
+        
+        <div class='row justify-content-center projectsImg'>
+            <a href='https://dwblincoe.github.io/sportsApi/' class='col'>
+                <img src='assets/images/api.png'>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <!--
+        --------------------
+            Contact Me
+        --------------------
+    -->
+
+    <div class='container justify-content-center'>
+        <div class='col-12'>
+            <h1>Contact Me</h1>
+            <div class='row justify-content-center'>
+                <form action="https://formspree.io/drewblincoe@yahoo.com"method="POST" class='col-12'>
+                    <input type="text" name="name" id='contactName' class='offset-2 col-8' placeholder='Your Name'>
+                    <br>
+                    <input type="email" name="_replyto" id='contactEmail'class='offset-2 col-8' placeholder='Email'> 
+                    <br>
+                    <textarea id='contactMessage' class='offset-2 col-8' placeholder='Your Message'></textarea>
+                    <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 

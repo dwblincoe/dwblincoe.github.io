@@ -17,6 +17,7 @@ img{
     display:flex;
     flex-wrap: wrap;
     margin-top: 100px;
+    justify-content: center;
 }
 
 .interestsBox{
@@ -24,6 +25,16 @@ img{
     padding:10px;
     text-align:center;
     margin-top: 50px;
+}
+
+.skillsets h1{
+    font-size:80px;
+}
+
+.skillsets i{
+    font-size:80px;
+    padding:30px;
+    color:yellow;
 }
 
 @media(max-width:1195px){
