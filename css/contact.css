@@ -10,15 +10,3 @@
     margin-top:15px;
     height:150px;
 }
-/* 
-<form action="https://formspree.io/drewblincoe@yahoo.com"method="POST" class='col-12'>
-                    <input type="text" name="name" id='contactName' class='offset-2 col-8' placeholder='Your Name'>
-                    <br>
-                    <input type="email" name="_replyto" id='contactEmail'class='offset-2 col-8' placeholder='Email'> 
-                    <br>
-                    <input type="text" name="_subject" id='subject' class='offset-2 col-8' placeholder="Subject">
-                    <br>
-                    <textarea id='contactMessage' class='offset-2 col-8' placeholder='Your Message'></textarea>
-                    <br>
-                    <input type="submit" value="Send">
-                </form> */

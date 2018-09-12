@@ -18,16 +18,16 @@
                 JUMBOTRON/HEADER
         -------------------------------------
      -->
-    <div class="jumboTron">
+    <div id='home' class="jumboTron">
         <div class="overlay">
             <div class="navBg2">
                 <nav class="navBg">
                     <h2 class="logo">DB</h2>
                     <ul>
-                        <a href="#">Home</a>
-                        <a href="#">About Me</a>
-                        <a href="#">Projects</a>
-                        <a href="#">Contact Me</a>
+                        <a href="#home">Home</a>
+                        <a href="#aboutMe">About Me</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact Me</a>
                     </ul>
 
                     <button onclick="dropDown()" class="dropBtn"><i class="fas fa-bars"></i></button>
@@ -53,7 +53,7 @@
                 ABOUT ME
     ----------------------------------
 -->
-    <div class="container">
+    <div id='aboutMe' class="container">
         <h1>About</h1>
         <div class="row justify-content-center aboutMeContainer">
             <div class='col-xl-5 col-lg-6 col-md-5'>   
@@ -73,7 +73,7 @@
                     problem-solving, team work, attention to detail, and creativity. 
                 </p>
                 <p>Want to learn more?</p>
-                <a href='assets/Resume.pdf'>Download my Resume</a>
+                <a href='assets/Resume.pdf' target='_blank'>Download my Resume</a>
             </div>
         </div>
         <div class='interests'>
@@ -128,10 +128,10 @@
                Projects
         -----------------------
     -->
-    <div class='container'>
+    <div id='projects' class='container'>
         <h1 class='projectHead'>Projects</h1>
         <div class="row justify-content-center projectsImg">
-            <a href='https://codepen.io/dwblincoe/pen/VGaJGE' class='col'>
+            <a href='https://codepen.io/dwblincoe/pen/VGaJGE' target='_blank' class='col-10'>
                 <img src='assets/images/cartman.png' class='img-fluid'>
             </a>
         </div>
@@ -139,7 +139,7 @@
         
         
         <div class='row justify-content-center projectsImg'>
-            <a href='https://dwblincoe.github.io/firstWebsite/' class='col'>
+            <a href='https://dwblincoe.github.io/firstWebsite/' target='_blank' class='col-10'>
                 <img src='assets/images/website.png'>
             </a>
         </div>    
@@ -147,7 +147,7 @@
         
         
         <div class='row justify-content-center projectsImg'>
-            <a href='https://dwblincoe.github.io/sportsApi/' class='col'>
+            <a href='https://dwblincoe.github.io/sportsApi/' target='_blank' class='col-10'>
                 <img src='assets/images/api.png'>
             </a>
         </div>
@@ -161,58 +161,41 @@
         --------------------
     -->
 
-    <div class='container'>
-        <!-- <div class='col-12'> -->
-            <div class='row justify-content-center'>
-                <section class='col-12' id="contact">
-                  <h2 class="text-center text-uppercase">Contact Me</h2>
-                    <form action="https://formspree.io/drewblincoe@yahoo.com" method="POST">
-                      <!-- <div class="control-group"> -->
-                        <!-- <div class="form-group"> -->
-                          <label class='offset-2'>Name</label>
-                          <input
-                            type="text"
-                            class="form-control offset-2 col-8"
-                            placeholder="Your Name"
-                            id="name"
-                            required
-                            data-validation-required-message="Please enter your name"
-                            name="name"
-                            >
+    <div id='contact' class='container'>
+        <div class='row justify-content-center'>
+            <section class='col-12' id="contact">
+                <h2 class="text-center text-uppercase">Contact Me</h2>
+                <form action="https://formspree.io/drewblincoe@yahoo.com" method="POST">
+                    <label class='offset-2'>Name</label>
+                    <input
+                        type="text"
+                        class="form-control offset-2 col-8"
+                        placeholder="Your Name"
+                        id="name"
+                        required
+                        data-validation-required-message="Please enter your name"
+                        name="name">
+                        <p class="help-block text-danger"></p>
+                    <label class='offset-2'>Email Address</label>
+                    <input
+                        type="email"
+                        class="form-control offset-2 col-8"
+                        placeholder="Your Email"
+                        id="email"
+                        required
+                        data-validation-required-message="Please enter your email"
+                        name="_replyto">
+                        <p class="help-block text-danger"></p>
+                    <textarea
+                        class="form-control offset-2 col-8"
+                        rows="7"
+                        placeholder="Your Message"
+                        id="message"
+                        required
+                        data-validation-required-message="Please leave a message"
+                        name="message"></textarea>
                           <p class="help-block text-danger"></p>
-                        <!-- </div> -->
-                      <!-- </div> -->
-                      <!-- <div class="control-group"> -->
-                        <!-- <div class="form-group"> -->
-                          <label class='offset-2'>Email Address</label>
-                          <input
-                            type="email"
-                            class="form-control offset-2 col-8"
-                            placeholder="Your Email"
-                            id="email"
-                            required
-                            data-validation-required-message="Please enter your email"
-                            name="_replyto"
-                          >
-                          <p class="help-block text-danger"></p>
-                        <!-- </div> -->
-                      <!-- </div> -->
-                      <!-- <div class="control-group"> -->
-                        <!-- <div class="form-group"> -->
-                          <textarea
-                            class="form-control offset-2 col-8"
-                            rows="7"
-                            placeholder="Your Message"
-                            id="message"
-                            required
-                            data-validation-required-message="Please leave a message"
-                            name="message"
-                          ></textarea>
-                          <p class="help-block text-danger"></p>
-                        <!-- </div> -->
-                      <!-- </div> -->
-                      <div class="text-center">
-                        <!-- <div id="success"></div> -->
+                    <div class="text-center">
                         <button type="submit" class="btn btn-lg btn-black">
                           <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
                           Send Message
@@ -221,7 +204,22 @@
                     </form>
                 </section>
             </div>
-        <!-- </div>  -->
+    </div>
+
+    <!--
+        -------------------
+              Footer
+        -------------------
+    -->
+    <div class='container-fluid footerBg'>
+            <div class='row justify-content-center'>
+                <a href='https://www.linkedin.com/in/drew-blincoe-007b06b4/' target='_blank' class='linkedin'>
+                    <i class="fab fa-linkedin"></i></a>
+                <a href='https://github.com/dwblincoe' target='_blank' class='github'><i class="fab fa-github"></i></a>
+            </div>
+            <div class='row justify-content-center'>
+                <footer>Copyright &copy 2018: Drew Blincoe</footer>
+            </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 

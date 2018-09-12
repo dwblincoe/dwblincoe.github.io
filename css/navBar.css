@@ -1,3 +1,7 @@
+nav {
+    position:sticky;
+}
+
 .navBg{
     color:var(--white);
     width:80%;
