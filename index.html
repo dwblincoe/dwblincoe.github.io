@@ -161,21 +161,67 @@
         --------------------
     -->
 
-    <div class='container justify-content-center'>
-        <div class='col-12'>
-            <h1>Contact Me</h1>
+    <div class='container'>
+        <!-- <div class='col-12'> -->
             <div class='row justify-content-center'>
-                <form action="https://formspree.io/drewblincoe@yahoo.com"method="POST" class='col-12'>
-                    <input type="text" name="name" id='contactName' class='offset-2 col-8' placeholder='Your Name'>
-                    <br>
-                    <input type="email" name="_replyto" id='contactEmail'class='offset-2 col-8' placeholder='Email'> 
-                    <br>
-                    <textarea id='contactMessage' class='offset-2 col-8' placeholder='Your Message'></textarea>
-                    <br>
-                    <input type="submit" value="Send">
-                </form>
+                <section class='col-12' id="contact">
+                  <h2 class="text-center text-uppercase">Contact Me</h2>
+                    <form action="https://formspree.io/drewblincoe@yahoo.com" method="POST">
+                      <!-- <div class="control-group"> -->
+                        <!-- <div class="form-group"> -->
+                          <label class='offset-2'>Name</label>
+                          <input
+                            type="text"
+                            class="form-control offset-2 col-8"
+                            placeholder="Your Name"
+                            id="name"
+                            required
+                            data-validation-required-message="Please enter your name"
+                            name="name"
+                            >
+                          <p class="help-block text-danger"></p>
+                        <!-- </div> -->
+                      <!-- </div> -->
+                      <!-- <div class="control-group"> -->
+                        <!-- <div class="form-group"> -->
+                          <label class='offset-2'>Email Address</label>
+                          <input
+                            type="email"
+                            class="form-control offset-2 col-8"
+                            placeholder="Your Email"
+                            id="email"
+                            required
+                            data-validation-required-message="Please enter your email"
+                            name="_replyto"
+                          >
+                          <p class="help-block text-danger"></p>
+                        <!-- </div> -->
+                      <!-- </div> -->
+                      <!-- <div class="control-group"> -->
+                        <!-- <div class="form-group"> -->
+                          <textarea
+                            class="form-control offset-2 col-8"
+                            rows="7"
+                            placeholder="Your Message"
+                            id="message"
+                            required
+                            data-validation-required-message="Please leave a message"
+                            name="message"
+                          ></textarea>
+                          <p class="help-block text-danger"></p>
+                        <!-- </div> -->
+                      <!-- </div> -->
+                      <div class="text-center">
+                        <!-- <div id="success"></div> -->
+                        <button type="submit" class="btn btn-lg btn-black">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                          Send Message
+                        </button>
+                      </div>
+                    </form>
+                </section>
             </div>
-        </div>
+        <!-- </div>  -->
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
