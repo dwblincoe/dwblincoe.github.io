@@ -57,3 +57,9 @@ img{
         margin-top:50px;
     }
 }
+
+@media(max-width:450px){
+    img{
+        width:90%;
+    }
+}

@@ -4,9 +4,9 @@ body{
     color:var(--white);
     font-family:'Play', sans-serif;
 }
-.container-fluid{
+/* .container-fluid{
     padding:0px;
-}
+} */
 
 hr{
     border-top:3px solid #4d4d4d;

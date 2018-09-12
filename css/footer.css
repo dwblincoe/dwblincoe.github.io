@@ -12,6 +12,10 @@
     margin-top:40px;
 }
 
+.footerBg .row{
+    width:100%;
+}
+
 .github{
     margin-left: 20px;
 }
