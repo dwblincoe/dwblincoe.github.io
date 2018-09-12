@@ -1,9 +1,10 @@
 .aboutMeContainer{
     display:flex;
     margin-top:10%;
+    flex-direction: row;
 }
 
-.aboutMe h1{
+.container h1{
     font-size: 80px;
     text-align:center;
 }
@@ -15,25 +16,33 @@ img{
 .interests{
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 100px;
 }
 
 .interestsBox{
-    display:inline-block;
     justify-content: center;
     padding:10px;
     text-align:center;
-    width:20%;
     margin-top: 50px;
 }
 
-@media(max-width:1030px){
-    .aboutMe h1{
-        font-size:50px;
+@media(max-width:1195px){
+    .container h1{
+        font-size:60px;
     }
+}
 
-    .aboutMe p{
-        font-size:12px;
+@media(max-width:990px){
+    /* .interestsBox img{
+        width:50%;
+    } */
+    .aboutMeContainer p{
+        font-size:14px;
+    }
+}
+@media(max-width:766px){
+    .aboutMeContainer p{
+        font-size:20px;
+        margin-top:50px;
     }
 }
